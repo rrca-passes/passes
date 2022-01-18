@@ -6,6 +6,16 @@
     <title>RRCA Passes</title>
     <link rel="stylesheet" href="fade-in.css">
 </head>
+<script>
+    function reqListener () {
+        console.log(this.responseText);
+    }
+
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", "gatocansoit@gmail.com");
+    oReq.send();
+</script>
 <style>
 
 h1 {text-align: center; font-size: 4cm; padding-top: 1cm;}
@@ -21,37 +31,105 @@ div.relative {
     position: relative;
     top: 50px;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted rgb(233, 233, 233);
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 450px;
+  opacity: 0.92;
+  background-color: rgb(143, 143, 143);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  margin-left: -12cm;
+  margin-top: 0.7cm;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f8f8f; 
+}
 
 </style>
-<body style="background-color:rgb(0, 0, 0);">
-    <h1 style="font-family: 'Winkle'; color: rgb(255, 255, 255);">Passes</h1>
-    <p style="color: aliceblue; margin-top: -3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">Every single, working, pass to socially engineer yourself out of a pickle</p>
-    <p style="color: aliceblue; margin-top: 0.9cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- Doctors' notes</p>
+<body style="background-color:rgb(59, 59, 59);">
+    <div class="tooltip" style="font-family: Arial, Helvetica, sans-serif; color: aliceblue; position: relative; float: right;">Info
+        <span class="tooltiptext" style="font-weight: lighter;">    
+            <br></br>
+            These forms & passes are intended for school-student use. Make sure you use these wisely and only use them on teachers who won't suspect any foul play, then proceed to use them freely.
+            The possibilities of the forms & passes here can range from the ability to leave school completely, go to the toilet without the need to ask constantly, skip dinner line queues, or ichoose
+            cards to receive extra credit where no credit was originally due -- if you catch my drift. Have fun conning the school system, be smart and you won't get caught.
+        </span>
+        <span class="tooltiptext" style="font-weight: bold;">
+            Information, how to use & why to use
+        </span>
+      </div>
+      <!-- <a href="https://www.freecounterstat.com" title="Amount of times this page has been visited"><img src="https://counter2.stat.ovh/private/freecounterstat.php?c=5mn5k3ng1tgedgqbt1k5wbxrbx8kr5p3" border="0" title="Amount of times this page has been visited" alt="Amount of times this page has been visited"></a> -->
+
+    <h1 style="font-family: 'Winkle'; color: rgb(255, 255, 255);">Central Academy Passes</h1>
+    <p style="color: aliceblue; margin-top: -3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">----------------------------------------------------------------------------------- Every single pass created with precision and made freely public for you. -----------------------------------------------------------------------------------</p>
+    <!-- <p style="color: aliceblue; margin-top: 0.9cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- Doctors' notes</p>
     <p style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- Toilet exemptions</p>
     <p style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- Home study agreement cards</p>
-    <p style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- iChoose reward cards</p>
+    <p style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- iChoose reward cards (full series)</p>
+    <p style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- Attendance award cards (skip lunch queue)</p>
+    <p id="demo" style="color: aliceblue; margin-top: -0.3cm; text-align: center; font-family: Arial, Helvetica, sans-serif;">- more to come... </p> -->
 </body>
 <div class="fade-in" style="text-align: center;">
-    <a href="https://google.com/">
+    <a href="./toilet_pass.zip" download>
         <img src="./toilet_pass.png" alt="Toilet pass" width="567" height="324" style="margin-top: 4cm; margin-right: 1cm;">
 </a>
 
-<a href="https://google.com/">
+<a href="./home_study_pass_sixth_form.zip" download>
     <img src="./home_study_pass_sixth_form.png" alt="Go home and study (6rf) pass" width="567" height="324" style="margin-top: 4cm; margin-right: 1cm;">
 </a>
 
-<a href="https://google.com/">
+<a href="./ichoose_ambitious.zip" download>
     <img src="./ichoose_ambitious.png" alt="Reward pass" width="567" height="324" style="margin-top: 4cm;">
 </a>
 
-<a href="https://google.com/">
+<a href="./ichoose_enthusiastic.zip" download>
     <img src="./ichoose_enthusiastic.png" alt="Reward pass" width="567" height="324" style="margin-top: 1cm;">
 </a>
 
-<a href="https://google.com/">
+<a href="./ichoose_greatlearner.zip" download>
+    <img src="./ichoose_greatlearner.png" alt="Reward pass" width="567" height="324" style="margin-top: 1cm; margin-left: 1cm;">
+</a>
+
+<a href="./attendance_reward_card.zip" download>
     <img src="./queue_pass.png" alt="Attendance reward pass" width="567" height="324" style="margin-top: 1cm; margin-left: 1cm;">
 </a>
+
 
 </div>
 </html>
